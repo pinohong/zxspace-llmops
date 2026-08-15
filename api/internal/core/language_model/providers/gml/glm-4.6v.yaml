@@ -1,0 +1,21 @@
+model: glm-4.6v
+label: GLM-4.6V
+model_type: chat
+features:
+  - image_input
+  - tool_call
+context_window: 128000
+max_output_tokens: 8000
+attributes:
+  model: glm-4.6v
+parameters:
+  - name: max_tokens
+    use_template: max_tokens
+    default: 4000
+    max: 8000
+metadata:
+  pricing:
+    input: 0.008
+    output: 0.03
+    unit: 0.001
+    currency: RMB

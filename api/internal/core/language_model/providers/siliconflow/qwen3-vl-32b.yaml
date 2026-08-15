@@ -1,0 +1,20 @@
+model: qwen3-vl-32b
+label: Qwen3-VL-32B
+model_type: chat
+features:
+  - image_input
+context_window: 131072
+max_output_tokens: 32768
+attributes:
+  model: Qwen/Qwen3-VL-32B-Instruct
+parameters:
+  - name: max_tokens
+    use_template: max_tokens
+    default: 4096
+    max: 32768
+metadata:
+  pricing:
+    input: 0.0
+    output: 0.0
+    unit: 0.001
+    currency: RMB

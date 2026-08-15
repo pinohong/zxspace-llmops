@@ -1,0 +1,29 @@
+# 版本控制
+.git
+.gitignore
+
+# IDE
+.idea
+.vscode
+
+# 本地虚拟环境
+.venv_311
+.venv
+venv
+
+# Python 缓存
+__pycache__
+*.pyc
+*.pyo
+.pytest_cache
+.benchmarks
+
+# 测试/临时目录
+test
+tests
+tmp
+todu
+mcp_demo
+
+# 本地运行数据（已由 docker-compose 卷挂载覆盖）
+storage

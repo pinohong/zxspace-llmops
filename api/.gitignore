@@ -1,0 +1,10 @@
+.env
+tmp/*
+storage/*
+.idea/*
+.venv_311/*
+.venv/*
+embeddings/
+*.log
+__pycache__/
+*.pyc

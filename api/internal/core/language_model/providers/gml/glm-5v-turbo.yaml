@@ -1,0 +1,21 @@
+model: glm-5v-turbo
+label: GLM-5V-Turbo
+model_type: chat
+features:
+  - image_input
+  - tool_call
+context_window: 200000
+max_output_tokens: 128000
+attributes:
+  model: glm-5v-turbo
+parameters:
+  - name: max_tokens
+    use_template: max_tokens
+    default: 8000
+    max: 128000
+metadata:
+  pricing:
+    input: 0.0
+    output: 0.0
+    unit: 0.001
+    currency: RMB

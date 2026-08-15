@@ -1,0 +1,20 @@
+model: qwen2.5-72b
+label: Qwen2.5-72B
+model_type: chat
+features:
+  - tool_call
+context_window: 128000
+max_output_tokens: 8000
+attributes:
+  model: Qwen/Qwen2.5-72B-Instruct
+parameters:
+  - name: max_tokens
+    use_template: max_tokens
+    default: 4000
+    max: 8000
+metadata:
+  pricing:
+    input: 0.002
+    output: 0.004
+    unit: 0.001
+    currency: RMB

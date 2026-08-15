@@ -1,0 +1,21 @@
+model: glm-5
+label: GLM-5
+model_type: chat
+features:
+  - agent_thought
+  - tool_call
+context_window: 128000
+max_output_tokens: 16000
+attributes:
+  model: glm-5
+parameters:
+  - name: max_tokens
+    use_template: max_tokens
+    default: 8000
+    max: 16000
+metadata:
+  pricing:
+    input: 0.005
+    output: 0.02
+    unit: 0.001
+    currency: RMB

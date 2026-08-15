@@ -1,0 +1,20 @@
+model: deepseek-v3
+label: DeepSeek-V3
+model_type: chat
+features:
+  - tool_call
+context_window: 128000
+max_output_tokens: 8000
+attributes:
+  model: deepseek-ai/DeepSeek-V3
+parameters:
+  - name: max_tokens
+    use_template: max_tokens
+    default: 4000
+    max: 8000
+metadata:
+  pricing:
+    input: 0.002
+    output: 0.008
+    unit: 0.001
+    currency: RMB

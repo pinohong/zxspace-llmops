@@ -1,0 +1,26 @@
+model: gpt-4o
+label: GPT-4o
+model_type: chat
+features:
+  - image_input
+  - tool_call
+context_window: 128000
+max_output_tokens: 16384
+attributes:
+  model: gpt-4o
+parameters:
+  - name: temperature
+    use_template: temperature
+    default: 0.7
+  - name: top_p
+    use_template: top_p
+  - name: max_tokens
+    use_template: max_tokens
+    default: 4096
+    max: 16384
+metadata:
+  pricing:
+    input: 0.0
+    output: 0.0
+    unit: 0.001
+    currency: RMB
