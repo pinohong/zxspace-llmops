@@ -14,8 +14,8 @@ RUN npm ci --ignore-scripts --legacy-peer-deps
 # 将项目代码拷贝到容器中
 COPY . .
 
-# 配置环境变量
-ENV VITE_API_PREFIX=http://172.18.224.1:5001
+# 配置环境变量（同源相对路径，由外层nginx将/api反代到后端，换域名/IP无需改此处）
+ENV VITE_API_PREFIX=/api
 
 #构建/编译项目
 RUN npm run build
