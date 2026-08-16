@@ -237,7 +237,7 @@ services:
       DEFAULT_VECTORIZER_MODULE: 'none'  # 向量化模块设置为none
       CLUSTER_HOSTNAME: 'node1'  # 节点的主机名字
       AUTHENTICATION_APIKEY_ENABLED: 'true'  # 启动基于API秘钥的身份校验
-      AUTHENTICATION_APIKEY_ALLOWED_KEYS: ''  # 允许的API秘钥列表
+      AUTHENTICATION_APIKEY_ALLOWED_KEYS: ${WEAVIATE_API_KEY}  # 允许的API秘钥列表（不能为空，否则首次启动初始化失败）
       AUTHENTICATION_APIKEY_USERS: '670633108@qq.com'  # 基于秘钥的API身份列表
       AUTHORIZATION_ADMINLIST_ENABLED: 'true'  # 启动AdminList授权方案
       AUTHORIZATION_ADMINLIST_USERS: '670633108@qq.com'  # 使用AdminList方案时具有管理权限的用户
