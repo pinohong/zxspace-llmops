@@ -13,8 +13,15 @@
       <login-form />
       <!-- 底部footer -->
       <div class="absolute right-0 bottom-0 w-full">
-        <footer class="flex items-center justify-center h-10 text-gray-600 text-center">
-          LLMOps AppBuilder
+        <footer class="flex items-center justify-center h-10 text-gray-600 text-center gap-2">
+          <span>LLMOps AppBuilder</span>
+          <a
+            href="https://beian.miit.gov.cn/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hover:text-blue-600 transition-colors"
+            >鄂ICP备2026044076号-1</a
+          >
         </footer>
       </div>
     </div>
